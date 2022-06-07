@@ -1,0 +1,42 @@
+body {
+    background-color: whitesmoke;
+}
+
+h3 {
+    color: aqua;
+    font-family: 'Roboto', cursive;
+    font-size: xx-large;
+}
+
+label {
+    color: darkcyan;
+    font-family: 'Roboto', cursive;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    border-color: aquamarine;
+    border-width: 1px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    
+}
+
+button {
+    border-radius: 20px;
+    color: white;
+    background-color: aqua;
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+
+div {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: black;
+}
