@@ -27,6 +27,5 @@ function calculoimc(){
     console.log(resultado)
     console.log(imc)
  
-    document.write(nome + " possui o imc " + imc + " e está " + resultado);
-    alert(nome + " possui o imc " + imc + " e está " + resultado);
+    alert("O imc é" + imc + " e está " + resultado);
 }
