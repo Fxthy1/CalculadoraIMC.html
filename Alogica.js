@@ -1,3 +1,15 @@
+function ValidarFormulario(){
+  let erro = "";
+
+  if (document.getElementById('peso').value.trim() == "" ){
+      erro = "- O campo peso é obrigatório<br>";
+  }
+
+  if (document.getElementById('altura').value.trim() == ""){
+      erro += "- O campo altura é obrigatório<br>";
+  }
+}
+
     function calculoimc() {
     let peso = parseFloat(document.getElementById("peso").value.trim());
     let altura = parseFloat(document.getElementById("altura").value.trim());
@@ -30,6 +42,8 @@
     alert(" O imc é " + imc + " e está " + resultado);
 }
 
+
+
 $(document).ready(function(){
   $('.date').mask('00/00/0000');
   $('.time').mask('00:00:00');
@@ -41,8 +55,8 @@ $(document).ready(function(){
   $('.mixed').mask('AAA 000-S0S');
   $('.cpf').mask('000.000.000-00', {reverse: true});
   $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
-  $('.money').mask('000.000.000.000.000,00', {reverse: true});
-  $('.money2').mask("#.##0,00", {reverse: true});
+  $('.money').mask('0.00', {reverse: true});
+  $('.money2').mask("00.00", {reverse: true});
   $('.ip_address').mask('0ZZ.0ZZ.0ZZ.0ZZ', {
     translation: {
       'Z': {
