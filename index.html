@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Calculadora</title>
+    <title>Calculadora de imc</title>
     <link rel="stylesheet" href="bonito.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 </head>
 <body>
 
-        <h3>CALCULADORA DE IMC</h3>
+        <h1>Kauê Farias e Felipe Lima</h1>
+        <form>
+        <h3>CALCULE SEU IMC</h3>
+        <br><br>
 
         <label for="peso">Informe seu peso (kg)</label>
-        <br>
-            <input type="text" class="money2" id="peso">
+            <input type="text" id="peso">
         <br>
         <br>
         <label for="altura">Informe sua altura</label>
+            <input type="text" id="altura">
         <br>
-            <input type="text" class="money2" id="altura">
         <br>
-        <br>
-        <button value="Calcular Imc" onclick="calculoimc()">Calcular Imc</button>
+        <input type="button" name="BtnEnviar" id="BtnEnviar" value="Enviar" onclick="calculoimc()">
+        </form>
 
         <div id="ex1" class="modal">
-            <p>Thanks for clicking. That felt good.</p>
+            <p>aa</p>
             <a href="#" rel="modal:close">Close</a>
           </div>
 
 
-    <script src="/OsJquerry/jquery-3.6.0.min.js"></script>
-    <script src="/OsJquerry/jquery.mask.js"></script>
+    <script src="OsJquerry/jquery-3.6.0.min.js"></script>
+    <script src="OsJquerry/jquery.mask.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="Alogica.js"></script>
     
 </body>

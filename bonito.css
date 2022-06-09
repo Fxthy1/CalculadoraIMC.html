@@ -1,42 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: whitesmoke;
+    background-image: linear-gradient(45deg, black, aqua);
+    height: 100vh;
+    color: #fff;
 }
 
 h3 {
-    color: aqua;
-    font-family: 'Roboto', cursive;
-    font-size: xx-large;
+    color:aqua;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
 }
 
 label {
-    color: darkcyan;
-    font-family: 'Roboto', cursive;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
 input {
-    border-color: aquamarine;
+    border-color: aqua;
     border-width: 1px;
     width: 200px;
     height: 40px;
     display: flex;
+    border-radius: 15px;
+    padding: 5px;
     
 }
 
-button {
+#BtnEnviar {
     border-radius: 20px;
     color: white;
-    background-color: aqua;
+    background-color: rgb(54, 54, 54);
     border: none;
     width: 100px;
     height: 50px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
 }
 
-div {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: black;
+form {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+    border: solid 3px rgb(0, 0, 0);
 }

@@ -1,8 +1,8 @@
-function calculoimc(){
-    let peso = parseFloat(document.getElementById("peso").value.trim())
-    let altura = parseFloat(document.getElementById("altura").value.trim())
+    function calculoimc() {
+    let peso = parseFloat(document.getElementById("peso").value.trim());
+    let altura = parseFloat(document.getElementById("altura").value.trim());
     let imc = 0;
-    let resultado="";
+    let resultado = "";
  
     imc = peso / (altura * altura); 
  
@@ -27,7 +27,7 @@ function calculoimc(){
     console.log(resultado)
     console.log(imc)
  
-    alert("O imc é" + imc + " e está " + resultado);
+    alert(" O imc é " + imc + " e está " + resultado);
 }
 
 $(document).ready(function(){
@@ -41,8 +41,8 @@ $(document).ready(function(){
   $('.mixed').mask('AAA 000-S0S');
   $('.cpf').mask('000.000.000-00', {reverse: true});
   $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
-  $('.money').mask('000.000.000.000.000.00', {reverse: true});
-  $('.money2').mask("#.##0.00", {reverse: true});
+  $('.money').mask('000.000.000.000.000,00', {reverse: true});
+  $('.money2').mask("#.##0,00", {reverse: true});
   $('.ip_address').mask('0ZZ.0ZZ.0ZZ.0ZZ', {
     translation: {
       'Z': {
